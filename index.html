@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmers Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+    <div id="heading">
+        <h1 id="title">Programmers Voice! Tell us your choice!</h1>
+        <p id="description">We love to know about which technology and tools software engineers are using world wide! Each and every Developers opinions are very precious to us!</p>
+    
+    </div>
+    <div id="main">
+        <form id="survey-form">
+            <div id="input-fields">
+                <label id="name"><b>Name:</b></label>
+                <input id="name" type="text" placeholder="Name" class="form" required placeholder="Full name"><br>
+                <label id="email"><b>Email:</b></label>
+                <input id="email" type="email" placeholder="Email" class="form" required placeholder="example@mail.com"><br>
+                <label id="age"><b>Age:</b></label>
+                <input id="age" type="number" placeholder="Age" class="form" min="5" max="99" required placeholder="12+"><br>
+            </div>
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Programming language you are expert at: </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="c">c programming</option>
+                    <option value="Python">python  programming</option>
+                    <option value="Java">Java programming</option>
+                    <option value="html">Html programming</option>
+                    <option value="go">Go programming</option>
+                </select>
+
+
+            </div>
+            <div id="button-area"><br>
+                <label id="job-label"><b>Employment Status</b></label><br>
+                <input type="radio" class="radio-inline" name="gender" value="employed" checked>Full-time job holder.(employed)<br>
+                <input type="radio" class="radio-inline" name="gender" value="freelancer">part-time jobholder.(freelancer)<br>
+                <input type="radio" class="radio-inline" name="gender" value="applier"> Looking for a job.(Applier)<br>
+                <input type="radio" class="radio-inline" name="gender" value="unemployed"> I am a student.(Unemployed)
+            </div>
+            <div id="button-area"><br>
+                <label id="os-label"><b>Operating system experience</b></label><br>
+                <input type="checkbox" name="os1" value="windows" checked> I am experienced with Windows-OS<br>
+                <input type="checkbox" name="os2" value="linux" >I am experienced with Linux-OS<br>
+                <input type="checkbox" name="0s3" value="mac"> I am experienced with Mac-OS<br>
+
+            </div>
+            <div id="dropdown"><br><br>
+                <label id="dropdown-label"><strong>Programming language you wanna be expert: </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="c">c programming</option>
+                    <option value="python">python programming</option>
+                    <option value="java">java programming</option>
+                </select>
+            </div>
+            <div id="ending"><br><br>
+                <label id="comments-label">Do you have any suggestion about this survey?</label><br>
+                <textarea style="height: 120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+                <input id="submit" type="submit" class="form">
+
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
